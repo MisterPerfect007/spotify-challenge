@@ -1,0 +1,27 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000;
+  min-height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+}
+.login__logo {
+  object-fit: contain;
+  /* min-width: 100px; */
+  max-height: 200px;
+  max-width: 100%;
+  margin: 0 20px;
+}
+.login__link {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #1ed760;
+  padding: 20px;
+  border-radius: 30px;
+  margin-top: 50px;
+  max-width: 300px;
+}
