@@ -1,0 +1,13 @@
+.sideBarOption {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #b3b3b3;
+}
+.sideBarOption__icon {
+  margin-right: 16px;
+}
+.sideBarOption:hover {
+  color: #fff;
+  transition: color 200ms;
+}

@@ -1,0 +1,35 @@
+.sideBar {
+  width: 200px;
+  color: #fff;
+  background-color: #000;
+  padding: 0 20px;
+}
+.sideBar__logo {
+  margin-top: 20px;
+  min-width: 50px;
+  max-width: 150px;
+}
+.sideBar__group1 {
+  margin: 20px 0;
+}
+.sideBar__group2-one,
+.sideBar__group2-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  margin-right: 16px;
+}
+.sideBar__group2-one {
+  background-color: #b3b3b3;
+  color: #000;
+}
+/* .sideBarOption is the parent of .sideBar__group2-one */
+.sideBarOption:hover .sideBar__group2-one {
+  background-color: #fff;
+  transition: background-color 200ms;
+}
+.sideBar__group2-two {
+  background: linear-gradient(145deg, #340eab, #849e99);
+}
