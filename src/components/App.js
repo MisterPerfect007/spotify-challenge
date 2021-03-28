@@ -8,19 +8,27 @@ import Player from './Player';
 function App() {
   const [token, setToken] = useState(null);
   useEffect(() => {
-    const _token = pickTokenFromUrl();
+    let _token = pickTokenFromUrl();
     window.location.hash = "";
+    const spotifyApi = new SpotifyWebApi();
     if(_token) {
 			console.log(_token);
 			localStorage.setItem('token', _token)
       setToken(_token);
-      const spotifyApi = new SpotifyWebApi();
       spotifyApi.setAccessToken(_token);
       spotifyApi.getMe().then((user) => {
         console.log(user);
       })
     }else {
-			// setToken(localStorage.getItem('token'))
+      _token = localStorage.getItem('token');
+      setToken(_token)
+      spotifyApi.setAccessToken(_token);
+      spotifyApi.getMe().then((user) => {
+        console.log(user);
+      })
+      // spotifyApi.play()
+      //   .then((resp) => resp.json())
+      //   .then(p => console.log(p))
 		}
 },[])
   return (

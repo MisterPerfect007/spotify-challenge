@@ -1,0 +1,10 @@
+.playlist {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+}
+.playlist:hover {
+  color: #fff;
+  transition: color 200ms;
+}

@@ -6,6 +6,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import LibraryMusicIcon from '@material-ui/icons/LibraryMusic';
 import AddIcon from '@material-ui/icons/Add';
 import FavoriteIcon from '@material-ui/icons/Favorite';
+import Playlist from './sideBar/Playlist';
 
 function SideBar() {
     return (
@@ -37,6 +38,13 @@ function SideBar() {
                     }
                     title="Liked songs" 
                 />
+            </div>
+            <div className="sideBar__playlists">
+                <Playlist />
+                <Playlist />
+            {/* playlist */}
+            {/* playlist */}
+            {/* playlist */}
             </div>
         </div>
     )

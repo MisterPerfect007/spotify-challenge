@@ -11,3 +11,8 @@
   color: #fff;
   transition: color 200ms;
 }
+.sideBarOption > h5 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
