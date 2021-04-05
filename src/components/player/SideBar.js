@@ -42,6 +42,8 @@ function SideBar() {
             <div className="sideBar__playlists">
                 <Playlist />
                 <Playlist />
+                <Playlist />
+                <Playlist />
             {/* playlist */}
             {/* playlist */}
             {/* playlist */}
